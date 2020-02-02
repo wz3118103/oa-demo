@@ -9,6 +9,7 @@
         <module name="oa-auth" />
         <module name="oa-flow" />
         <module name="oa-organization" />
+        <module name="oa-web" />
       </profile>
     </annotationProcessing>
   </component>
