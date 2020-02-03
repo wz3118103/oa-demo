@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.wz.oa.organization.model.Employee;
 
-@ContextConfiguration(locations = {"classpath:application-organization.xml"})
+@ContextConfiguration(locations = {"classpath:src/main/profiles/dev/application-organization.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)  
 public class EmployeeServiceTest {
 	

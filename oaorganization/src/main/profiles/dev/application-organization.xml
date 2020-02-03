@@ -14,7 +14,7 @@
      <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">  
         <property name="locations">  
             <list>  
-               <value>classpath*:jdbc.properties</value>   
+               <value>classpath*:src/main/profiles/dev/jdbc.propertieses/dev/jdbc.properties</value>
             </list>  
         </property>  
     </bean>  
@@ -30,8 +30,8 @@
 	<!-- 配置mybatis sqlSessionFactory -->  	
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">  
         <property name="dataSource" ref="dataSource" />  
-        <property name="mapperLocations" value="classpath*:com/wz/oa/organization/mapper/**/*.xml"/>
-        <property name="configLocation" value="classpath:mybatis-config.xml" />  
+        <property name="mapperLocations" value="classpath*:com/wz/oa/organization/mapper/EmployeeMapper.xml"/>
+        <property name="configLocation" value="classpath:src/main/profiles/dev/mybatis-config.xmldev/mybatis-config.xml" />
     </bean> 
 	 
  	<!-- 自动扫描mapper接口文件 --> 
